@@ -148,6 +148,7 @@ module.exports = (function() {
 		foreach(arguments).do(function(dir) {
 			dirs.push(dir);
 		});
+                _dirs = dirs;
 		
 		callback = dirs.pop();
 		if(! (callback && typeof callback === 'function') ) {
